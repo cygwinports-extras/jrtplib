@@ -1,0 +1,19 @@
+DESCRIPTION="C++ RTP library"
+HOMEPAGE="http://research.edm.uhasselt.be/~jori/page/index.php?n=CS.Jrtplib"
+SRC_URI="http://research.edm.uhasselt.be/jori/${PN}/${P}.tar.bz2"
+
+PKG_NAMES="${PN} libjrtp${PV} libjrtp-devel"
+PKG_HINTS="setup lib devel"
+PKG_CONTENTS[0]=	# empty
+PKG_CONTENTS[1]="usr/bin/*-${PV//./-}.dll usr/share/doc/"
+PKG_CONTENTS[2]="usr/include/ usr/lib/"
+
+src_compile() {
+	cd ${S}
+	cygautoreconf
+
+	cd ${B}
+	mkdir -p src tools
+	cygconf
+	cygmake
+}

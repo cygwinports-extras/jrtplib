@@ -1,0 +1,5 @@
+category: Net
+requires: cygwin libjrtp3.7.1 libjthread-devel
+external-source: jrtplib
+sdesc: "C++ RTP library (development)"
+ldesc: "JRTPLIB is an object-oriented RTP library written in C++."

@@ -1,0 +1,116 @@
+jrtplib
+------------------------------------------
+JRTPLIB is an object-oriented RTP library written in C++.
+
+Runtime requirements:
+  cygwin-1.5.25-15
+  libjthread1.2.1-1.2.1-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
+  binutils-20080523-1
+  cygport-0.3.11-1
+  gawk-3.1.6-1
+  gcc-core-3.4.4-3
+  gcc-g++-3.4.4-3
+  libtool-2.2.2-2
+  make-3.81-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://research.edm.uhasselt.be/~jori/page/index.php?n=CS.Jrtplib
+
+Canonical download:
+  http://research.edm.uhasselt.be/jori/jrtplib/
+
+-------------------------------------------
+
+Build instructions:
+  unpack jrtplib-3.7.1-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./jrtplib-3.7.1-X.cygport all
+
+This will create:
+  /usr/src/jrtplib-3.7.1-X-src.tar.bz2
+  /usr/src/jrtplib-3.7.1-X.tar.bz2
+  /usr/src/libjrtp-devel-3.7.1-X.tar.bz2
+  /usr/src/libjrtp3.7.1-3.7.1-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary packages:
+
+(libjrtp3.7.1)
+  /usr/bin/cygjrtp-3-7-1.dll
+  /usr/share/doc/jrtplib-3.7.1/ChangeLog
+  /usr/share/doc/jrtplib-3.7.1/TODO
+
+(libjrtp-devel)
+  /usr/include/jrtplib3/rtcpapppacket.h
+  /usr/include/jrtplib3/rtcpbyepacket.h
+  /usr/include/jrtplib3/rtcpcompoundpacket.h
+  /usr/include/jrtplib3/rtcpcompoundpacketbuilder.h
+  /usr/include/jrtplib3/rtcppacket.h
+  /usr/include/jrtplib3/rtcppacketbuilder.h
+  /usr/include/jrtplib3/rtcprrpacket.h
+  /usr/include/jrtplib3/rtcpscheduler.h
+  /usr/include/jrtplib3/rtcpsdesinfo.h
+  /usr/include/jrtplib3/rtcpsdespacket.h
+  /usr/include/jrtplib3/rtcpsrpacket.h
+  /usr/include/jrtplib3/rtcpunknownpacket.h
+  /usr/include/jrtplib3/rtpaddress.h
+  /usr/include/jrtplib3/rtpcollisionlist.h
+  /usr/include/jrtplib3/rtpconfig.h
+  /usr/include/jrtplib3/rtpconfig_unix.h
+  /usr/include/jrtplib3/rtpconfig_win.h
+  /usr/include/jrtplib3/rtpdebug.h
+  /usr/include/jrtplib3/rtpdefines.h
+  /usr/include/jrtplib3/rtperrors.h
+  /usr/include/jrtplib3/rtpfaketransmitter.h
+  /usr/include/jrtplib3/rtphashtable.h
+  /usr/include/jrtplib3/rtpinternalsourcedata.h
+  /usr/include/jrtplib3/rtpipv4address.h
+  /usr/include/jrtplib3/rtpipv4destination.h
+  /usr/include/jrtplib3/rtpipv6address.h
+  /usr/include/jrtplib3/rtpipv6destination.h
+  /usr/include/jrtplib3/rtpkeyhashtable.h
+  /usr/include/jrtplib3/rtplibraryversion.h
+  /usr/include/jrtplib3/rtpmemorymanager.h
+  /usr/include/jrtplib3/rtpmemoryobject.h
+  /usr/include/jrtplib3/rtppacket.h
+  /usr/include/jrtplib3/rtppacketbuilder.h
+  /usr/include/jrtplib3/rtppollthread.h
+  /usr/include/jrtplib3/rtprandom.h
+  /usr/include/jrtplib3/rtprawpacket.h
+  /usr/include/jrtplib3/rtpsession.h
+  /usr/include/jrtplib3/rtpsessionparams.h
+  /usr/include/jrtplib3/rtpsessionsources.h
+  /usr/include/jrtplib3/rtpsourcedata.h
+  /usr/include/jrtplib3/rtpsources.h
+  /usr/include/jrtplib3/rtpstructs.h
+  /usr/include/jrtplib3/rtptimeutilities.h
+  /usr/include/jrtplib3/rtptransmitter.h
+  /usr/include/jrtplib3/rtptypes.h
+  /usr/include/jrtplib3/rtptypes_unix.h
+  /usr/include/jrtplib3/rtptypes_win.h
+  /usr/include/jrtplib3/rtpudpv4transmitter.h
+  /usr/include/jrtplib3/rtpudpv6transmitter.h
+  /usr/lib/libjrtp.a
+  /usr/lib/libjrtp.dll.a
+  /usr/lib/libjrtp.la
+  /usr/lib/pkgconfig/jrtplib.pc
+
+------------------
+
+Port Notes:
+
+----- version 3.7.1-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
