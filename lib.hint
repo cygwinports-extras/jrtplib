@@ -1,5 +1,5 @@
 category: Net
-requires: cygwin libjthread1.2.1
+requires: libjthread1.2.1
 external-source: jrtplib
 sdesc: "C++ RTP library (runtime)"
 ldesc: "JRTPLIB is an object-oriented RTP library written in C++."
